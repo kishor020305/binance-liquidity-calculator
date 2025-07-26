@@ -1,0 +1,158 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white);
+  color: whitesmoke;
+}
+
+:root {
+  --primary: #4caf50;
+  --danger: #f44336;
+  --light-bg: #f2f2f2;
+  --dark-bg: #121212;
+  --light-text: #333;
+  --dark-text: #f9f9f9;
+}
+
+/* Theme Control */
+.light {
+  --bg: var(--light-bg);
+  --text: var(--light-text);
+  --box: #ffffff;
+  --input-bg: #fff;
+  --input-text: #000;
+  --btn-bg: #4caf50;
+  --btn-text: #fff;
+}
+
+.dark {
+  --bg: var(--dark-bg);
+  --text: var(--dark-text);
+  --box: #1f1f1f;
+  --input-bg: #333;
+  --input-text: #fff;
+  --btn-bg: #388e3c;
+  --btn-text: #fff;
+}
+
+/* Layout */
+.calculator-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--bg);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Typography */
+.heading {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-right: 1.75rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+.reset-btn {
+  background-color: var(--danger);
+}
+
+.reset-btn:hover {
+  background-color: #c62828;
+}
+
+/* Grid Layout */
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  background-color: var(--input-bg);
+  border-radius: 8px;
+  color: var(--input-text);
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Toggle Button */
+.theme-toggle {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  background: transparent;
+  border: 1px solid var(--text);
+}
+
+/* Error Message */
+.error-msg {
+  color: red;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .calculator-container {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+}
