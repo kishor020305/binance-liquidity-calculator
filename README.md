@@ -115,5 +115,5 @@ MIT License. Free to use and modify.
 
 ## 🧑‍💻 Author
 
-Made by **\[Your Name]**
-Feel free to connect on [LinkedIn](https://www.linkedin.com/in/your-profile) or [GitHub](https://github.com/your-username).
+Made by **KISHOR KUMAR AREPATI**
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/kishor-kumar-arepati/) or [GitHub](https://github.com/KISHOR-020305).
