@@ -94,11 +94,6 @@ This app is fully responsive and adjusts gracefully to all screen sizes using CS
 
 ---
 
-## 🌙 Dark Mode
-
-Dark and light themes are built-in and can be toggled via the top-right button. The themes use CSS variables for easy management.
-
----
 
 ## 📃 License
 
