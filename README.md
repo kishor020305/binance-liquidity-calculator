@@ -6,7 +6,6 @@ A **React-based web application** that helps crypto traders calculate important 
 * **Estimated Loss at Stop-Loss**
 * **Estimated Profit at Take-Profit**
 
-Includes **dark mode**, **responsive design**, and a clean UI for easy use on all devices.
 
 ---
 
