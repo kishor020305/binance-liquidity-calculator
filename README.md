@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# Binance Liquidation Calculator 🧾📉
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React-based web application** that helps crypto traders calculate important risk metrics for their Binance futures trades. It provides real-time calculations for:
 
-## Available Scripts
+* **Isolated and Cross Liquidation Prices**
+* **Estimated Loss at Stop-Loss**
+* **Estimated Profit at Take-Profit**
 
-In the project directory, you can run:
+Includes **dark mode**, **responsive design**, and a clean UI for easy use on all devices.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* 🔄 Real-time liquidation calculation
+* 🧑‍🌾 Long and short position support
+* 📉 Profit and loss estimates based on Stop-Loss and Take-Profit
+* 🌗 Dark mode toggle
+* 📱 Mobile responsive
+* 🔄 Reset button to clear inputs
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧪 Tech Stack
 
-### `npm run build`
+* **React** (Functional Components with Hooks)
+* **CSS3** for custom styling and themes
+* **HTML5** for semantic structure
+* Responsive design using **CSS Grid**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📆 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/
+│   └── LiquidationCalculator.jsx   # Core calculator UI and logic
+├── styles/
+│   └── calculator.css              # Styling with dark mode and responsiveness
+├── App.jsx                         # Renders the calculator
+└── index.js                        # Entry point
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔧 Installation & Running Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# Clone the repo
+git clone https://github.com/kishor-020305/binance-liquidation-calculator.git
+cd binance-liquidation-calculator
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Install dependencies
+npm install
 
-## Learn More
+# Start development server
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app will be available at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧾 How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Enter:
 
-### Analyzing the Bundle Size
+   * **Coin Name** (e.g., BTC)
+   * **Entry Price**
+   * **Leverage**
+   * **Wallet Balance**
+   * **Used Margin**
+   * **Stop-Loss Price** *(optional)*
+   * **Take-Profit Price** *(optional)*
+   * **Position Type**: Long or Short
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Click **Calculate** to get:
 
-### Making a Progressive Web App
+   * **Position Size**
+   * **Isolated Liquidation Price**
+   * **Cross Liquidation Price**
+   * **Estimated Loss at Stop-Loss**
+   * **Estimated Profit at Take-Profit**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Click **Reset** to clear all inputs.
 
-### Advanced Configuration
+4. Use the 🌙 **Dark Mode toggle** for a better experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📱 Mobile Responsiveness
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This app is fully responsive and adjusts gracefully to all screen sizes using CSS Grid and media queries.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🌙 Dark Mode
+
+Dark and light themes are built-in and can be toggled via the top-right button. The themes use CSS variables for easy management.
+
+---
+
+## 📃 License
+
+MIT License. Free to use and modify.
+
+---
+
+## 🙌 Acknowledgements
+
+* Inspired by traders and analysts using Binance Futures.
+* Designed and developed with love using React 💚
+
+---
+
+## 🧑‍💻 Author
+
+Made by **\[Your Name]**
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/your-profile) or [GitHub](https://github.com/your-username).
